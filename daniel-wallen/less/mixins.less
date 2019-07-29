@@ -1,2 +1,23 @@
 // Mixins here
 
+.button-transform(@bg-color: skyblue, @height: 100px, @width: 1000px, @font: white) {
+    height: @height;
+    width: @width;
+    background: @bg-color;
+    border: 1px solid orange;
+    font-weight: bold;
+    color: @font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 3rem;
+    transition: 1s;
+
+    &:hover {
+        background: @font;
+        color: @bg-color;
+        cursor: pointer;
+        -webkit-text-stroke-width: 0.25px;
+    }
+}

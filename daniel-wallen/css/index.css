@@ -170,6 +170,8 @@ h2 {
 @media (max-width: 500px) {
   .top nav {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 500px) {
@@ -242,5 +244,36 @@ h2 {
   .middle .card {
     margin-top: 0;
     flex-direction: column;
+  }
+}
+.bottom .cta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.bottom btn {
+  height: 100px;
+  width: 1000px;
+  background: skyblue;
+  border: 1px solid orange;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 3rem;
+  transition: 1s;
+}
+.bottom btn:hover {
+  background: white;
+  color: skyblue;
+  cursor: pointer;
+  -webkit-text-stroke-width: 0.25px;
+}
+@media (max-width: 500px) {
+  .bottom btn {
+    max-width: 100%;
+    font-size: 2rem;
   }
 }
