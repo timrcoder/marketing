@@ -138,6 +138,7 @@ h2 {
 }
 h1 {
   font-size: 4rem;
+  color: orange;
 }
 h2 {
   font-size: 3rem;
@@ -164,8 +165,17 @@ h2 {
   font-size: 2rem;
 }
 .top nav a {
+  color: skyblue;
   text-decoration: none;
   margin-right: 20px;
+  background: white;
+  transition: 2s;
+}
+.top nav a:hover {
+  color: orange;
+  -webkit-text-stroke-width: 0.15px;
+  -webkit-text-stroke-color: black;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .top nav {
@@ -255,7 +265,7 @@ h2 {
   height: 100px;
   width: 1000px;
   background: skyblue;
-  border: 1px solid orange;
+  border: 2px solid orange;
   font-weight: bold;
   color: white;
   display: flex;
