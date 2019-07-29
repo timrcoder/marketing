@@ -144,7 +144,7 @@ h2 {
 }
 .top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -187,5 +187,60 @@ h2 {
 @media (max-width: 500px) {
   .feature-img {
     display: none;
+  }
+}
+.middle {
+  font-family: Arial;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.middle .card {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.middle .card .card-text {
+  width: 40%;
+  margin: 120px 40px 0 40px;
+  line-height: 2;
+  vertical-align: center;
+}
+@media (max-width: 500px) {
+  .middle .card .card-text {
+    margin: 20px 0;
+    min-width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .middle .card .card-text h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .middle .card .card-text p {
+    margin: 0 20px;
+  }
+}
+.middle .card .card-img {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .middle .card .card-img {
+    margin: 0 auto 20px auto;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .middle .card .card-img img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .middle .card {
+    margin-top: 0;
+    flex-direction: column;
   }
 }
