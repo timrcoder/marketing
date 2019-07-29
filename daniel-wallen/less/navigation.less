@@ -1,8 +1,39 @@
 // Navigation code here
 
-.nav-menu {
+.top {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+
+    .logo {
+        @media @mobile {
+            max-width: 100%;
+        }
+
+        h1 {
+            @media @mobile {
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    nav {
+        font-family: @header-font;
+        font-size: 2rem;
+
+        a {
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        @media @mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media @mobile {
+        flex-direction: column;
+    }
 }
