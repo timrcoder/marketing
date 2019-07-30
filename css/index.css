@@ -10,7 +10,7 @@ body {
   font-family: 'Lobster', cursive;
   font-size: 32px;
   border-right: 90px;
-  color: #337ab7;
+  color: steelblue;
 }
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
 .main-header {
@@ -28,7 +28,7 @@ li {
   padding-bottom: 0.8em;
 }
 a {
-  color: #fff;
+  color: steelblue;
   text-decoration: none;
   /* text-transform: uppercase; */
   font-weight: 500;
@@ -58,7 +58,8 @@ a {
 }
 #button {
   padding: 10px 24px;
-  background-color: #333333;
+  border-radius: 6px;
+  background-color: steelblue;
   display: inline;
   font-weight: 600;
   letter-spacing: 1px;
@@ -90,10 +91,10 @@ footer p {
 }
 /*Pseudo Classes*/
 a:hover {
-  color: #e62739;
+  color: lightblue;
 }
 /*Media Quaries*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   /*-----Main-Header-----*/
   .main-nav,
   .main-nav li {
