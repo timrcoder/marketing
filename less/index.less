@@ -24,7 +24,7 @@ color: @mainColor;
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
 
 .get-started {
-	background: blue;
+	// background: blue;
 }
 
 
@@ -35,19 +35,19 @@ color: @mainColor;
 	background-color: @mainColor;
 	text-align: center;
 	height: 180px;
-	background: coral
+	// background: coral
 
 }
 
 .main-nav{
 	margin:0; /*Default margin: 1em , so needs to set 0 to remove margin. */
-	border: 2px solid cyan;
+	// border: 2px solid cyan;
 }
 
 li{
 	list-style: none;
-	padding-top: .8em;
-    padding-bottom: .8em;
+	padding-top: .3em;
+    padding-bottom: .3em;
     
 	
 }
@@ -78,7 +78,7 @@ a{
 .wrapper{
 	position: absolute;
 	width: 100%;
-border: 3px solid red;
+// border: 3px solid red;
 /* 	top: 15%; */
 	
 }
@@ -116,7 +116,7 @@ section .container{
 
 .btn-default{
 	padding: 16px 20px;
-	margin: 0px 6px 0px 6px;
+	margin: auto;
 	border: 1px solid grey;
 	// display: inline;            #############################
 	color: lightblue;
@@ -147,7 +147,7 @@ footer p{
 
 a:hover{
 	color: white;
-	opacity: .8;
+	opacity: .7;
 	
 	
 }
@@ -187,11 +187,17 @@ a:hover{
 
 	/*-----Section------*/
 	
-
+// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
 	section .container{
 		height: 340px;
-		border: 2px solid purple;
+		// border: 2px solid purple;
+		display: flex;
+		justify-content: space-around;
+
 	}
+// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
+
+
 
 
 	.col{
@@ -200,7 +206,8 @@ a:hover{
 		margin-left: 1em;
 		vertical-align: top;
 		margin-top: 4em;
-		border: 2px solid blue;
+		// border: 2px solid blue;
+
 	}
 
 	.col p{
@@ -208,7 +215,7 @@ a:hover{
 	}
 }
 
-
+// -----------------   ADDING MEDIA QUERIES   ---------------------ADDING MEDIA QUERIES   ---------------------
 
 	@media(min-width: 1050px){
 
@@ -238,10 +245,16 @@ a:hover{
 
 		/*------Section------*/
 
+// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
 		section .container{
 			width: 90%;
-			margin: 0 auto;
+			// margin: 0 auto;
+			display: flex;
+			justify-content: space-evenly;
+			align-content: center;
+			margin-left: 5%;
 		}
+// // ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
 
 		.col{
 			width: 220px;
