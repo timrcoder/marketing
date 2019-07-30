@@ -1,0 +1,230 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+  font-family: Roboto;
+}
+/* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO----------- */
+.logo {
+  
+ font-family: 'Lobster', cursive;
+ font-size: 32px;
+  border-right: 90px;
+  color: rgb(51, 122, 183);
+}
+/* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
+
+
+.main-header{
+	background-color:#333333;
+	text-align: center;
+	height: 180px;
+
+}
+
+.main-nav{
+	margin:0; /*Default margin: 1em , so needs to set 0 to remove margin. */
+}
+
+li{
+	list-style: none;
+	padding-top: .8em;
+    padding-bottom: .8em;
+    
+	
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: block;
+
+}
+
+
+/*------_____Main_____------*/
+
+/*------_____With Positioning_____--------*/
+
+
+.main{
+	height:560px;
+  
+  
+/*   https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg */
+
+	background-image: url( https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg);
+	background-size: cover;
+	text-align: center;
+	position: relative;
+
+}
+.wrapper{
+	position: absolute;
+	width: 100%;
+/* 	top: 15%; */
+	
+}
+.main-title{
+	text-transform: uppercase;
+	font-size: 3.5em;
+	margin-bottom: 1.2em;
+	letter-spacing: 1px;
+  color: lightsteelblue;
+}
+
+#button{
+	padding: 10px 24px;
+	background-color: #333333;
+	display: inline;
+	font-weight: 600;
+	letter-spacing:1px; 
+}
+
+/*------Column------*/
+
+
+section .container{
+	text-align: center;
+
+}
+.col{
+	width: 75%;
+	margin:2em auto;
+	
+}
+
+.btn-default{
+	padding: 6px 20px;
+	border: 1px solid grey;
+	display: inline;
+	color: #333333;
+	font-size: .6em;
+}
+
+/*-----footer-----*/
+
+footer{
+	height: 85px;
+	background-color: #333333;
+	color: #ffffff;
+
+}
+
+footer p{
+	padding: 1.5em 5em;
+	font-size: .8em;
+}
+
+
+/*Pseudo Classes*/
+
+
+a:hover{
+	color: #e62739;
+}
+
+
+/*Media Quaries*/
+
+@media(min-width: 769px){
+	
+
+	/*-----Main-Header-----*/
+
+	.main-nav,
+	.main-nav li{
+		display: inline-block;	
+	}
+
+	.main-nav{
+		margin: 1em 3em;
+	}
+
+	.main-nav li{
+		margin: .5em;
+		padding: .3em;
+	}
+
+	.main-header{
+		height: 4.5em;
+
+	}
+
+	.main-header .container{
+		text-align: left;
+	}
+
+	
+
+	/*-----Section------*/
+	
+
+	section .container{
+		height: 340px;
+	}
+
+
+	.col{
+		display: inline-block;
+		width: 180px;          /*I tried percentages and em value too here, but that doesn't fit*/
+		margin-left: 1em;
+		vertical-align: top;
+		margin-top: 4em;
+	}
+
+	.col p{
+		margin-bottom: 1.8em;
+	}
+
+
+
+
+	@media(min-width: 1050px){
+
+		/*------Main-header------*/
+
+
+		.main-nav{
+			margin-left: 8em;
+		}
+
+		/*-----Main-----*/          
+
+		.main{
+			height: 820px;
+		}
+
+		#button{
+			padding: 16px 40px;
+			background-color: #333333;
+			display: inline;
+		}
+
+		.main-title{
+			font-size: 4.5em;
+		}
+
+
+		/*------Section------*/
+
+		section .container{
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.col{
+			width: 220px;
+			margin-left: 3.5em;
+		}
+
+
+		/*-----footer-----*/
+
+		footer p{
+			padding: 2em 10em;
+		}
+
+
