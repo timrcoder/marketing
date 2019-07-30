@@ -28,7 +28,7 @@ li {
   padding-bottom: 0.8em;
 }
 a {
-  color: steelblue;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -73,13 +73,15 @@ section .container {
   margin: 2em auto;
 }
 .btn-default {
-  padding: 6px 20px;
+  padding: 16px 20px;
+  margin: 0px 6px 0px 6px;
   border: 1px solid grey;
-  display: inline;
   color: lightblue;
-  font-size: 0.6em;
+  font-size: 1em;
   background: steelblue;
   border-radius: 6px;
+  width: 120px;
+  height: 20px;
 }
 /*-----footer-----*/
 footer {
@@ -94,6 +96,7 @@ footer p {
 /*Pseudo Classes*/
 a:hover {
   color: white;
+  opacity: 0.8;
 }
 /*Media Quaries*/
 @media (min-width: 768px) {
