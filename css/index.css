@@ -30,7 +30,7 @@ li {
 a {
   color: steelblue;
   text-decoration: none;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-weight: 500;
   display: block;
 }
@@ -76,8 +76,10 @@ section .container {
   padding: 6px 20px;
   border: 1px solid grey;
   display: inline;
-  color: #333333;
+  color: lightblue;
   font-size: 0.6em;
+  background: steelblue;
+  border-radius: 6px;
 }
 /*-----footer-----*/
 footer {
@@ -91,7 +93,7 @@ footer p {
 }
 /*Pseudo Classes*/
 a:hover {
-  color: lightblue;
+  color: white;
 }
 /*Media Quaries*/
 @media (min-width: 768px) {
