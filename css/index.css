@@ -126,11 +126,6 @@ a:hover {
     text-align: left;
   }
   /*-----Section------*/
-  section .container {
-    height: 340px;
-    display: flex;
-    justify-content: space-around;
-  }
   .col {
     display: inline-block;
     width: 180px;
