@@ -4,24 +4,33 @@ body {
   padding: 0;
   font-family: Roboto;
 }
+p {
+  text-shadow: 0px 0px 6px #ffffff;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+  margin: 5px;
+  padding: 6px;
+}
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO----------- */
 .logo {
-  font-size: 32px;
+  font-size: 40px;
   border-right: 90px;
-  color: steelblue;
-}
-.menu-item:hover {
-  color: steelblue;
+  color: white;
 }
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
 .main-header {
   background-color: steelblue;
   text-align: center;
   height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .main-nav {
   margin: 0;
   /*Default margin: 1em , so needs to set 0 to remove margin. */
+  width: 100%;
 }
 li {
   list-style: none;
@@ -38,7 +47,7 @@ a {
 .main {
   height: 560px;
   /*   https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg */
-  background-image: url(https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg);
+  background-image: url("https://www.viennawurstelstand.com/wp-content/uploads/2017/03/viennawurstelstand_boardgamebars_cafebenno3.jpg");
   background-size: cover;
   text-align: center;
   position: relative;
@@ -94,6 +103,7 @@ footer p {
 a:hover {
   color: white;
   opacity: 0.7;
+  text-shadow: 2px 2px 5px ;
 }
 /*Media Quaries*/
 @media (min-width: 768px) {
@@ -131,6 +141,7 @@ a:hover {
   }
   .col p {
     margin-bottom: 1.8em;
+    border-radius: 6px;
   }
 }
 @media (min-width: 1050px) {
