@@ -10,14 +10,32 @@ html,body{
   font-family: Roboto;
 }
 
+// ==================  MY ORIGINAL SHADOWING  ============================
+// p {
+// 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+// 	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+// 	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+// 	transition: all 0.4s ease 0s;
+// 	margin: 5px;
+// 	  padding: 6px;
+// 	}
+// ========================================================================
+
+
+
+
 p {
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-webkit-box-shadow: 0px 5px 40px -10px @mainColor;
+	-moz-box-shadow: 0px 5px 40px -10px @mainColor;
 	transition: all 0.4s ease 0s;
 	margin: 5px;
 	  padding: 6px;
+	  color: @mainColor;
+
 	}
+
+
 
 
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO----------- */
@@ -147,15 +165,15 @@ section .container{
 
 footer{
 	height: 85px;
-	background-color: #333333;
+	background-color: @mainColor;
 	color: #ffffff;
 
 }
 
-footer p{
-	padding: 1.5em 5em;
-	font-size: .8em;
-}
+// footer p{
+// 	padding: 1.5em 5em;
+// 	font-size: .8em;
+// }
 
 
 /*Pseudo Classes*/
@@ -283,7 +301,9 @@ a:hover{
 		/*-----footer-----*/
 
 		footer p{
-			padding: 2em 10em;
+			padding: 2em 6em;
+			font-size: 20px;
+			color: white;
 		}
 
 	}
