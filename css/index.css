@@ -11,27 +11,29 @@ p {
   transition: all 0.4s ease 0s;
   margin: 5px;
   padding: 6px;
-  color: steelblue;
+}
+.interests {
+  color: black;
 }
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO----------- */
 .logo {
   font-size: 40px;
   border-right: 90px;
   color: white;
+  border: 2px dashed darkgreen;
 }
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
 .main-header {
   background-color: steelblue;
   text-align: center;
   height: 180px;
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 13px;
 }
 .main-nav {
   margin: 0;
   /*Default margin: 1em , so needs to set 0 to remove margin. */
-  width: 100%;
 }
 li {
   list-style: none;
@@ -71,7 +73,7 @@ a {
   background: steelblue;
   display: inline;
 }
-/*------Column------*/
+/*----------------------------------------Column-------------------------------------------Column------*/
 section .container {
   text-align: center;
 }
@@ -90,19 +92,26 @@ section .container {
   width: 120px;
   height: 20px;
 }
-/*-----footer-----*/
+#copyright {
+  color: white;
+}
+/*-----------------footer----------------------------footer------------------------footer---------------*/
 footer {
   height: 85px;
   background-color: steelblue;
-  color: #ffffff;
+  color: white;
 }
-/*Pseudo Classes*/
+footer p {
+  padding: 1.5em 5em;
+  font-size: 0.8em;
+}
+/*---------------------------------------Pseudo Classes-------------------Pseudo Classes-------------------*/
 a:hover {
   color: white;
   opacity: 0.7;
   text-shadow: 2px 2px 5px ;
 }
-/*Media Quaries*/
+/*---------------------------------------Media Queries----------  768 PX  -----------Media Queries---------*/
 @media (min-width: 768px) {
   /*-----Main-Header-----*/
   .main-nav,
@@ -110,7 +119,10 @@ a:hover {
     display: inline-block;
   }
   .main-nav {
-    margin: 1em 3em;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
   }
   .main-nav li {
     margin: 0.5em;
@@ -118,6 +130,8 @@ a:hover {
   }
   .main-header {
     height: 4.5em;
+    display: flex;
+    align-items: center;
   }
   .main-header .container {
     text-align: left;
@@ -152,7 +166,6 @@ a:hover {
   }
   /*------Section------*/
   section .container {
-    width: 90%;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -172,5 +185,110 @@ a:hover {
 @media (max-width: 700px) {
   .main {
     display: none;
+  }
+}
+.main-container {
+  border: 2px solid red;
+  width: 98%;
+  margin-left: 1%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background: url("https://pics.freeartbackgrounds.com/midle/Blue_Orange_Sky_Background-351.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.box1 {
+  width: 45vw;
+  height: 80vh;
+  border: 2px solid blue;
+  margin: 1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1%;
+}
+.text-and-image2 {
+  border: 2 px solid darkgreen;
+}
+.description {
+  border: 2px dashed black;
+  margin: 1%;
+  color: white;
+}
+.sports,
+.music {
+  background: red;
+  width: 200px;
+  height: 200px;
+  border: 2px dashed yellow;
+  margin: 1%;
+}
+.box2 {
+  width: 45vw;
+  height: 80vh;
+  border: 2px solid blue;
+  display: flex;
+  margin: 1%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.conversation,
+.upcoming-events {
+  background: cyan;
+  height: 30vh;
+  width: 30vw;
+  border: 2px dashed yellow;
+  margin: 1%;
+}
+@media (max-width: 800px) {
+  .main-container {
+    width: 95%vw;
+    height: 50%vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box1,
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 45%;
+  }
+  .sports,
+  .music {
+    display: flex;
+    width: 150px;
+    height: 150px;
+  }
+  .conversation,
+  .upcoming-events {
+    display: flex;
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 400px) {
+  .main-container {
+    width: 95%vw;
+    height: 50%vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box1,
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 65%;
+  }
+  .sports,
+  .music {
+    display: flex;
+    width: 45vw;
+    height: 45%vh;
   }
 }

@@ -31,11 +31,12 @@ p {
 	transition: all 0.4s ease 0s;
 	margin: 5px;
 	  padding: 6px;
-	  color: @mainColor;
 
 	}
 
-
+.interests {
+	color: black;
+}
 
 
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO----------- */
@@ -44,6 +45,7 @@ p {
  font-size: 40px;
   border-right: 90px;
   color: white;
+  border: 2px dashed darkgreen;
 }
 
 // .menu-item:hover {
@@ -51,9 +53,9 @@ p {
 // }
 /* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
 
-.get-started {
-	// background: blue;
-}
+// .get-started {
+// 	// background: blue;
+// }
 
 
 
@@ -63,18 +65,18 @@ p {
 	background-color: @mainColor;
 	text-align: center;
 	height: 180px;
-	width: 100%;
+	// width: 100%;
 	// border: 2px solid red;
 	display: flex;
-
 	justify-content: space-evenly;
+	padding-bottom: 13px;
 
 }
 
 .main-nav{
 	margin:0; /*Default margin: 1em , so needs to set 0 to remove margin. */
 	// border: 2px solid cyan;
-	width: 100%;
+	// width: 100%;
 
 }
 
@@ -133,7 +135,7 @@ a{
 	// color: @mainColor;
  }
 
-/*------Column------*/
+/*----------------------------------------Column-------------------------------------------Column------*/
 
 
 section .container{
@@ -160,35 +162,30 @@ section .container{
 	width: 120px;
 	height: 20px;
 }
-
-/*-----footer-----*/
+ #copyright {
+	 color: white;
+ }
+/*-----------------footer----------------------------footer------------------------footer---------------*/
 
 footer{
 	height: 85px;
 	background-color: @mainColor;
-	color: #ffffff;
+	color: white
 
 }
 
-// footer p{
-// 	padding: 1.5em 5em;
-// 	font-size: .8em;
-// }
-
-
-/*Pseudo Classes*/
-
-
+footer p{
+	padding: 1.5em 5em;
+	font-size: .8em;
+}
+/*---------------------------------------Pseudo Classes-------------------Pseudo Classes-------------------*/
 a:hover{
 	color: white;
 	opacity: .7;
 	text-shadow: 2px 2px 5px ;
 
 }
-
-
-/*Media Quaries*/
-
+/*---------------------------------------Media Queries----------  768 PX  -----------Media Queries---------*/
 @media(min-width: 768px){
 	
 
@@ -200,25 +197,30 @@ a:hover{
 	}
 
 	.main-nav{
-		margin: 1em 3em;
+		// margin: 1em 3em;
+		margin: 0 auto;
+		padding-top: 20px;
+		display: flex;
+		align-items: center;
+
 	}
 
 	.main-nav li{
 		margin: .5em;
 		padding: .3em;
+		
 	}
 
 	.main-header{
 		height: 4.5em;
-
+		// border: 2px solid purple;
+		display: flex;
+		align-items: center;
 	}
 
 	.main-header .container{
 		text-align: left;
 	}
-
-	
-
 	/*-----Section------*/
 	
 // ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
@@ -230,9 +232,6 @@ a:hover{
 
 	// }
 // ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
-
-
-
 
 	.col{
 		display: inline-block;
@@ -247,11 +246,11 @@ a:hover{
 	.col p{
 		margin-bottom: 1.8em;
 		border-radius: 6px;
+		
 
 	}
 }
-
-// -----------------   ADDING MEDIA QUERIES   ---------------------ADDING MEDIA QUERIES   ---------------------
+// -----------------   ADDING MEDIA QUERIES   --------1050 PX -------------ADDING MEDIA QUERIES   ---------------------
 
 	@media(min-width: 1050px){
 
@@ -283,7 +282,7 @@ a:hover{
 
 // ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
 		section .container{
-			width: 90%;
+			// width: 90%;
 			// margin: 0 auto;
 			display: flex;
 			justify-content: space-evenly;
@@ -314,3 +313,159 @@ a:hover{
 			display: none;
 		}
 	}
+
+
+	// ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 
+	// ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 
+	// ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 
+
+	.main-container {
+		border: 2px solid red;
+		width: 98%;
+		margin-left: 1%;
+		height: auto;
+		display: flex;
+		justify-content: space-evenly;
+
+
+		
+			background: url("https://pics.freeartbackgrounds.com/midle/Blue_Orange_Sky_Background-351.jpg") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		  
+
+
+	}
+
+
+
+	// -------------------------- SPORTS / MUSIC --------------------- SPORTS / MUSIC --------------------- SPORTS / MUSIC 
+.box1 {
+	width: 45vw;
+	height: 80vh;
+	border: 2px solid blue;
+	margin: 1%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1%;
+	// flex-direction: column;
+
+}
+.text-and-image1 {
+	// border: 2px solid darkgreen;
+}
+.text-and-image2 {
+	border: 2 px solid darkgreen;
+}
+
+.description {
+	border: 2px dashed black;
+	margin: 1%;
+	color: white;
+}
+.sports, .music{
+	background: red;
+	width: 200px;
+	height: 200px;
+	border: 2px dashed yellow;
+	margin: 1%;
+
+}
+
+// ---------------------- CONVERSATION / UPCOMING EVENTS   ---------------------- CONVERSATION / UPCOMING EVENTS
+.box2 {
+	width: 45vw;
+	height: 80vh;
+	border: 2px solid blue;
+	margin: 1%;
+	display: flex;
+	margin: 1%;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.conversation, .upcoming-events{
+	background: cyan;
+	height: 30vh;
+	width: 30vw;
+	border: 2px dashed yellow;
+	margin: 1%;
+}
+
+// -----------  MEDIA QUERIES  -----------  MEDIA QUERIES  -----------  MEDIA QUERIES  -----------  MEDIA QUERIES
+
+@media (max-width: 800px) {
+	.main-container {
+		width: 95%vw;
+		height: 50%vh;
+		flex-direction: column;
+		align-items: center;
+	}
+	.box1, .box2{
+		display: flex;
+		flex-direction: column;
+		width: 80vw;
+		height: 45%;
+	}
+	
+	.sports, .music {
+		display: flex;
+		width: 150px;
+		height: 150px;
+	}
+	.conversation, .upcoming-events {
+		display: flex;
+		width: 150px;
+		height: 150px;
+	}
+
+}
+// --------------------- MEDIA 700--------------------- MEDIA 700--------------------- MEDIA 700--------------------- MEDIA 700
+
+// @media (max-width: 700px) {
+// 	.main-container {
+// 		width: 95%vw;
+// 		height: 50%vh;
+// 		flex-direction: column;
+// 		align-items: center;
+// 	}
+// 	.box1, .box2{
+// 		display: flex;
+// 		flex-direction: column;
+// 		width: 80vw;
+// 		height: 45vh;
+// 	}
+	
+// 	.sports, .music {
+// 		display: flex;
+// 		width: 200px;
+// 		height: 200px;
+// 	}
+// }
+// --------------------- MEDIA 400--------------------- MEDIA 400--------------------- MEDIA 400--------------------- MEDIA 400
+
+@media (max-width: 400px) {
+	.main-container {
+		width: 95%vw;
+		height: 50%vh;
+		flex-direction: column;
+		align-items: center;
+	}
+	.box1, .box2{
+		display: flex;
+		flex-direction: column;
+		width: 80vw;
+		height: 65%;
+	}
+	
+	.sports, .music {
+		display: flex;
+		width: 45vw;
+		height: 45%vh;
+	}
+}
