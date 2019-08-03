@@ -9,7 +9,6 @@ html,body{
 	padding: 0;
   font-family: Roboto;
 }
-
 // ==================  MY ORIGINAL SHADOWING  ============================
 // p {
 // 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
@@ -20,10 +19,43 @@ html,body{
 // 	  padding: 6px;
 // 	}
 // ========================================================================
+.main-header{
+	background-color: @mainColor;
+	text-align: center;
+	height: 130px;
+	width: 100%;
+	border: 2px solid red; // UPPER RED BOX W/ BLUE BACKGROUND
+	display: flex;
+	justify-content: space-evenly;
+	// padding-bottom: 13px;
+}
 
+.container {
+	border: 5px dotted blue;
+	width: 100%;
+	height: auto;
+	margin-right: o0;
+	margin-top: 20px;
+}
+/* LOGO-----------LOGO-------------LOGO-----------LOGO-----------LOGO----------- */
 
+.logo {
+	font-size: 40px;
+	 color: white;
+	 border: 2px dashed darkgreen;
+	 width: 50vh;
+   }
+// --------------------------------------------------------------------------------
+   .menu-box{
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	border: 2px solid pink;
+	// margin-right: 250px;
+	width: 50vw;
+	// width: 500px;
 
-
+}
 p {
 	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
 	-webkit-box-shadow: 0px 5px 40px -10px @mainColor;
@@ -31,7 +63,6 @@ p {
 	transition: all 0.4s ease 0s;
 	margin: 5px;
 	  padding: 6px;
-
 	}
 
 .interests {
@@ -39,45 +70,16 @@ p {
 }
 
 
-/* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO----------- */
-.logo {
 
- font-size: 40px;
-  border-right: 90px;
-  color: white;
-  border: 2px dashed darkgreen;
-}
-
-// .menu-item:hover {
-// color: @mainColor;
-// }
-/* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
-
-// .get-started {
-// 	// background: blue;
-// }
-
-
-
-
-
-.main-header{
-	background-color: @mainColor;
-	text-align: center;
-	height: 180px;
-	// width: 100%;
-	// border: 2px solid red;
-	display: flex;
-	justify-content: space-evenly;
-	padding-bottom: 13px;
-
-}
+// ---------------------------------------------------------------------------------
 
 .main-nav{
 	margin:0; /*Default margin: 1em , so needs to set 0 to remove margin. */
-	// border: 2px solid cyan;
-	// width: 100%;
-
+	border: 2px solid cyan;
+	display: flex;
+	align-items: center;
+	// margin-right: 2%;
+	margin: 0em;
 }
 
 li{
@@ -100,7 +102,6 @@ a{
 .main{
 	height:560px;
 	// height: 450px;
-  
   
 /*   https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg */
 // https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg
@@ -137,13 +138,9 @@ a{
 
 /*----------------------------------------Column-------------------------------------------Column------*/
 
-
-section .container{
-	text-align: center;
-	
-
-
-}
+// section .container{
+// 	text-align: center;
+// }
 .col{
 	width: 75%;
 	margin:2em auto;
@@ -154,7 +151,6 @@ section .container{
 	padding: 16px 20px;
 	margin: auto;
 	border: 1px solid grey;
-	// display: inline;            #############################
 	color: lightblue;
 	font-size: 1em;
 	background: @mainColor;
@@ -185,56 +181,17 @@ a:hover{
 	text-shadow: 2px 2px 5px ;
 
 }
-/*---------------------------------------Media Queries----------  768 PX  -----------Media Queries---------*/
-@media(min-width: 768px){
-	
 
-	/*-----Main-Header-----*/
-
-	.main-nav,
-	.main-nav li{
-		display: inline-block;	
-	}
-
-	.main-nav{
-		// margin: 1em 3em;
-		margin: 0 auto;
-		padding-top: 20px;
-		display: flex;
-		align-items: center;
-
-	}
-
-	.main-nav li{
-		margin: .5em;
-		padding: .3em;
-		
-	}
-
-	.main-header{
-		height: 4.5em;
-		// border: 2px solid purple;
-		display: flex;
-		align-items: center;
-	}
-
-	.main-header .container{
+	.main-header .container{  //   #####################################################################################
 		text-align: left;
 	}
 	/*-----Section------*/
 	
-// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
-	// section .container{
-	// 	height: 340px;
-	// 	// border: 2px solid purple;
-	// 	display: flex;
-	// 	justify-content: space-around;
-
-	// }
-// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
 
 	.col{
-		display: inline-block;
+		// display: inline-block;
+		display: flex;
+		flex-direction:  column;
 		width: 180px;          /*I tried percentages and em value too here, but that doesn't fit*/
 		margin-left: 1em;
 		vertical-align: top;
@@ -249,51 +206,24 @@ a:hover{
 		
 
 	}
+
+.section-border-container {
+	border: 3px dotted goldenrod;
 }
-// -----------------   ADDING MEDIA QUERIES   --------1050 PX -------------ADDING MEDIA QUERIES   ---------------------
 
-	@media(min-width: 1050px){
-
-		/*------Main-header------*/
-
-
-		.main-nav{
-			// margin-left: 8em;
-		}
-
-		/*-----Main-----*/          
-
-		.main{
-			height: 820px;
-		}
-
-		#button{
-			padding: 16px 40px;
-			background-color: @mainColor;
-			display: inline;
-		}
-
-		.main-title{
-			font-size: 4.5em;
-		}
-
-
-		/*------Section------*/
-
-// ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
-		section .container{
-			// width: 90%;
+		section .container{  
+			
 			// margin: 0 auto;
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-around;
 			align-content: center;
-			margin-left: 5%;
+			border: 3px solid lawngreen;
 		}
-// // ---------------------------------   ADDING FLEXBOX   --------------------------   ADDING FLEXBOX   ---------------
+
 
 		.col{
 			width: 220px;
-			margin-left: 3.5em;
+			// margin-left: 3.5em;
 		}
 
 
@@ -305,29 +235,22 @@ a:hover{
 			color: white;
 		}
 
-	}
+	
 
-// ============================================  RESIZE IMAGE @ 700PX =====================================
-	@media(max-width: 700px) {
-		.main {
-			display: none;
-		}
-	}
+	
 
 
-	// ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 
-	// ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 
-	// ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 ===================== PAGE2 
+	// ===================== PAGE2 ===================== PAGE2 ===================== 
+	// ===================== PAGE2 ===================== PAGE2 ===================== 
+	// ===================== PAGE2 ===================== PAGE2 ===================== 
 
-	.main-container {
+	.main-container {  //    ###########################################################################
 		border: 2px solid red;
-		width: 98%;
-		margin-left: 1%;
+		width: 100vw;
+		// margin-right: 4%;
 		height: auto;
 		display: flex;
-		justify-content: space-evenly;
-
-
+		// justify-content: space-around;
 		
 			background: url("https://pics.freeartbackgrounds.com/midle/Blue_Orange_Sky_Background-351.jpg") no-repeat center center fixed; 
 			-webkit-background-size: cover;
@@ -335,11 +258,7 @@ a:hover{
 			-o-background-size: cover;
 			background-size: cover;
 		  
-
-
 	}
-
-
 
 	// -------------------------- SPORTS / MUSIC --------------------- SPORTS / MUSIC --------------------- SPORTS / MUSIC 
 .box1 {
@@ -358,7 +277,7 @@ a:hover{
 	// border: 2px solid darkgreen;
 }
 .text-and-image2 {
-	border: 2 px solid darkgreen;
+	// border: 2 px solid darkgreen;
 }
 
 .description {
@@ -399,58 +318,10 @@ a:hover{
 
 // -----------  MEDIA QUERIES  -----------  MEDIA QUERIES  -----------  MEDIA QUERIES  -----------  MEDIA QUERIES
 
-@media (max-width: 800px) {
-	.main-container {
-		width: 95%vw;
-		height: 50%vh;
-		flex-direction: column;
-		align-items: center;
-	}
-	.box1, .box2{
-		display: flex;
-		flex-direction: column;
-		width: 80vw;
-		height: 45%;
-	}
-	
-	.sports, .music {
-		display: flex;
-		width: 150px;
-		height: 150px;
-	}
-	.conversation, .upcoming-events {
-		display: flex;
-		width: 150px;
-		height: 150px;
-	}
 
-}
-// --------------------- MEDIA 700--------------------- MEDIA 700--------------------- MEDIA 700--------------------- MEDIA 700
-
-// @media (max-width: 700px) {
-// 	.main-container {
-// 		width: 95%vw;
-// 		height: 50%vh;
-// 		flex-direction: column;
-// 		align-items: center;
-// 	}
-// 	.box1, .box2{
-// 		display: flex;
-// 		flex-direction: column;
-// 		width: 80vw;
-// 		height: 45vh;
-// 	}
-	
-// 	.sports, .music {
-// 		display: flex;
-// 		width: 200px;
-// 		height: 200px;
-// 	}
-// }
-// --------------------- MEDIA 400--------------------- MEDIA 400--------------------- MEDIA 400--------------------- MEDIA 400
-
-@media (max-width: 400px) {
-	.main-container {
+// ----------------- MEDIA 530----------------- MEDIA 530--------------  MEDIA 530------------// 
+@media (max-width: 530px) {
+	.main-container {  //##############################################################################
 		width: 95%vw;
 		height: 50%vh;
 		flex-direction: column;
@@ -468,4 +339,53 @@ a:hover{
 		width: 45vw;
 		height: 45%vh;
 	}
-}
+  }
+
+// ------------------MEDIA 800------------------MEDIA 800----------------MEDIA 800
+
+@media (max-width: 800px) {
+	 .main-nav{
+	// margin: 1em 3em;
+	margin: 0 auto;
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	border: 2px solid black;
+	width: 100vw;
+   }
+
+   .menu-box{
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	border: 2px solid pink;
+	width:80vw;
+	margin-right: 100px;
+
+	}
+	.logo {
+		font-size: 40px;
+		 color: white;
+		 border: 2px dashed darkgreen;
+		 width: 380px;
+	   }
+	   section .container{  
+			
+		// margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+		border: 3px solid lawngreen;
+		// width: 95vw;
+		display: flex;
+		// margin-bottom: 0px 5px 0px 5px;
+		// flex-direction: column;
+	}
+		.btn-default {
+			width: 90px;
+			font-size: 12px;
+			height: 20px;
+		}
+ 	}

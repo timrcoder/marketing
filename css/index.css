@@ -4,6 +4,36 @@ body {
   padding: 0;
   font-family: Roboto;
 }
+.main-header {
+  background-color: steelblue;
+  text-align: center;
+  height: 130px;
+  width: 100%;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container {
+  border: 5px dotted blue;
+  width: 100%;
+  height: auto;
+  margin-right: o0;
+  margin-top: 20px;
+}
+/* LOGO-----------LOGO-------------LOGO-----------LOGO-----------LOGO----------- */
+.logo {
+  font-size: 40px;
+  color: white;
+  border: 2px dashed darkgreen;
+  width: 50vh;
+}
+.menu-box {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  border: 2px solid pink;
+  width: 50vw;
+}
 p {
   text-shadow: 0px 0px 6px #ffffff;
   -webkit-box-shadow: 0px 5px 40px -10px steelblue;
@@ -15,25 +45,13 @@ p {
 .interests {
   color: black;
 }
-/* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO----------- */
-.logo {
-  font-size: 40px;
-  border-right: 90px;
-  color: white;
-  border: 2px dashed darkgreen;
-}
-/* LOGO-----------LOGO------------------LOGO-----------LOGO-----------LOGO------------ */
-.main-header {
-  background-color: steelblue;
-  text-align: center;
-  height: 180px;
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 13px;
-}
 .main-nav {
   margin: 0;
   /*Default margin: 1em , so needs to set 0 to remove margin. */
+  border: 2px solid cyan;
+  display: flex;
+  align-items: center;
+  margin: 0em;
 }
 li {
   list-style: none;
@@ -74,9 +92,6 @@ a {
   display: inline;
 }
 /*----------------------------------------Column-------------------------------------------Column------*/
-section .container {
-  text-align: center;
-}
 .col {
   width: 75%;
   margin: 2em auto;
@@ -111,89 +126,46 @@ a:hover {
   opacity: 0.7;
   text-shadow: 2px 2px 5px ;
 }
-/*---------------------------------------Media Queries----------  768 PX  -----------Media Queries---------*/
-@media (min-width: 768px) {
-  /*-----Main-Header-----*/
-  .main-nav,
-  .main-nav li {
-    display: inline-block;
-  }
-  .main-nav {
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-  }
-  .main-nav li {
-    margin: 0.5em;
-    padding: 0.3em;
-  }
-  .main-header {
-    height: 4.5em;
-    display: flex;
-    align-items: center;
-  }
-  .main-header .container {
-    text-align: left;
-  }
-  /*-----Section------*/
-  .col {
-    display: inline-block;
-    width: 180px;
-    /*I tried percentages and em value too here, but that doesn't fit*/
-    margin-left: 1em;
-    vertical-align: top;
-    margin-top: 4em;
-  }
-  .col p {
-    margin-bottom: 1.8em;
-    border-radius: 6px;
-  }
+.main-header .container {
+  text-align: left;
 }
-@media (min-width: 1050px) {
-  /*------Main-header------*/
-  /*-----Main-----*/
-  .main {
-    height: 820px;
-  }
-  #button {
-    padding: 16px 40px;
-    background-color: steelblue;
-    display: inline;
-  }
-  .main-title {
-    font-size: 4.5em;
-  }
-  /*------Section------*/
-  section .container {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    margin-left: 5%;
-  }
-  .col {
-    width: 220px;
-    margin-left: 3.5em;
-  }
-  /*-----footer-----*/
-  footer p {
-    padding: 2em 6em;
-    font-size: 20px;
-    color: white;
-  }
+/*-----Section------*/
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  /*I tried percentages and em value too here, but that doesn't fit*/
+  margin-left: 1em;
+  vertical-align: top;
+  margin-top: 4em;
 }
-@media (max-width: 700px) {
-  .main {
-    display: none;
-  }
+.col p {
+  margin-bottom: 1.8em;
+  border-radius: 6px;
+}
+.section-border-container {
+  border: 3px dotted goldenrod;
+}
+section .container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  border: 3px solid lawngreen;
+}
+.col {
+  width: 220px;
+}
+/*-----footer-----*/
+footer p {
+  padding: 2em 6em;
+  font-size: 20px;
+  color: white;
 }
 .main-container {
   border: 2px solid red;
-  width: 98%;
-  margin-left: 1%;
+  width: 100vw;
   height: auto;
   display: flex;
-  justify-content: space-evenly;
   background: url("https://pics.freeartbackgrounds.com/midle/Blue_Orange_Sky_Background-351.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -209,9 +181,6 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   padding: 1%;
-}
-.text-and-image2 {
-  border: 2 px solid darkgreen;
 }
 .description {
   border: 2px dashed black;
@@ -244,34 +213,7 @@ a:hover {
   border: 2px dashed yellow;
   margin: 1%;
 }
-@media (max-width: 800px) {
-  .main-container {
-    width: 95%vw;
-    height: 50%vh;
-    flex-direction: column;
-    align-items: center;
-  }
-  .box1,
-  .box2 {
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    height: 45%;
-  }
-  .sports,
-  .music {
-    display: flex;
-    width: 150px;
-    height: 150px;
-  }
-  .conversation,
-  .upcoming-events {
-    display: flex;
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .main-container {
     width: 95%vw;
     height: 50%vh;
@@ -290,5 +232,42 @@ a:hover {
     display: flex;
     width: 45vw;
     height: 45%vh;
+  }
+}
+@media (max-width: 800px) {
+  .main-nav {
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid black;
+    width: 100vw;
+  }
+  .menu-box {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    border: 2px solid pink;
+    width: 80vw;
+    margin-right: 100px;
+  }
+  .logo {
+    font-size: 40px;
+    color: white;
+    border: 2px dashed darkgreen;
+    width: 380px;
+  }
+  section .container {
+    justify-content: space-around;
+    align-content: center;
+    border: 3px solid lawngreen;
+    display: flex;
+  }
+  .btn-default {
+    width: 90px;
+    font-size: 12px;
+    height: 20px;
   }
 }
