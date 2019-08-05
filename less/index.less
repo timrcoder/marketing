@@ -26,7 +26,7 @@ html,body{
 	width: 100%;
 	border: 2px solid yellow; // UPPER RED BOX W/ BLUE BACKGROUND
 	display: flex;
-	justify-content: space-evenly;
+	
 	// padding-bottom: 13px;
 }
 
@@ -94,22 +94,20 @@ a{
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase; 
-	font-weight: 500;
+	font-weight: 50px;
 	display: block;
 
 }
 
-.main{
-	height:560px;
+.main{ // BOX HOLDING :   INTERESTS / EVENTS / GROUPS ____ BOX HOLDING :   INTERESTS / EVENTS / GROUPS 
+	height:600px;
 	// height: 450px;
-  
-/*   https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg */
-// https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg
 	background-image: url("https://www.viennawurstelstand.com/wp-content/uploads/2017/03/viennawurstelstand_boardgamebars_cafebenno3.jpg");
 	background-size: cover;
 	text-align: center;
 	position: relative;
-
+/*   https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg */
+// https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg
 }
 .wrapper{
 	position: absolute;
@@ -137,15 +135,6 @@ a{
  }
 
 /*----------------------------------------Column-------------------------------------------Column------*/
-
-// section .container{
-// 	text-align: center;
-// }
-.col{
-	width: 75%;
-	margin:2em auto;
-	
-}
 
 .btn-default{
 	padding: 16px 20px;
@@ -200,12 +189,7 @@ a:hover{
 
 	}
 
-	.col p{
-		margin-bottom: 1.8em;
-		border-radius: 6px;
-		
 
-	}
 
  .section-border-container {  //----------------CONTAINER FOR LOWER 3 CATEGORIES AND THEIR BUTTONS -----------
 	border: 3px dotted royalblue;
@@ -213,7 +197,7 @@ a:hover{
 	width: 100vw;
 	display: flex;
 	justify-content: space-around;
-	height: 320px;
+	height: 280px;
 	// margin-bottom: 100px;
 	
 }
@@ -254,12 +238,12 @@ a:hover{
 	// ===================== PAGE2 ===================== PAGE2 ===================== 
 	// ===================== PAGE2 ===================== PAGE2 ===================== 
 	.main-container {  
-		border: 2px solid red;
+		border: 2px solid red;//   RED  MAIN ---------RED  MAIN ---------RED  MAIN ---------RED  MAIN ---------
 		width: 100vw;
 		// margin-right: 4%;
 		height: auto;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 		
 			background: url("https://pics.freeartbackgrounds.com/midle/Blue_Orange_Sky_Background-351.jpg") no-repeat center center fixed; 
@@ -368,7 +352,7 @@ overflow: hidden; //   -------    THIS KEEPS TEXT FROM OVERFLOWING PAST BORDER  
 	
 
 .box1 {
-	width: 40vw;
+	width: 45vw;
 	height: 50vh;
 	border: 2px solid blue;   // BLUE BOXES CONTAINER 2 PHOTOS EACH--------BLUE BOXES CONTAINER 2 PHOTOS EACH
 	margin: 1%;
@@ -425,7 +409,7 @@ overflow: hidden; //   -------    THIS KEEPS TEXT FROM OVERFLOWING PAST BORDER  
 
 // ----------------- MEDIA 530----------------- MEDIA 530--------------  MEDIA 530------------// 
 @media (max-width: 530px) {
-	.main-container {  //##############################################################################
+	.main-container {  
 		width: 95%vw;
 		height: 50%vh;
 		flex-direction: column;
@@ -463,8 +447,9 @@ overflow: hidden; //   -------    THIS KEEPS TEXT FROM OVERFLOWING PAST BORDER  
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-around;
+	align-content: center;
 	border: 2px solid black;
-	width: 100vw;
+	width: 94vw;
    }
 
    .menu-box{
@@ -486,10 +471,11 @@ overflow: hidden; //   -------    THIS KEEPS TEXT FROM OVERFLOWING PAST BORDER  
 			
 		// margin: 0 auto;
 		display: flex;
+		// flex-direction: column;
 		justify-content: space-around;
 		align-content: center;
 		border: 3px solid lawngreen;
-		margin-left: 20px;
+		margin-left: 40px;
 		display: flex;
 
 	}
@@ -497,7 +483,7 @@ overflow: hidden; //   -------    THIS KEEPS TEXT FROM OVERFLOWING PAST BORDER  
 			width: 80px;
 			font-size: 12px;
 			height: 20px;
-			margin-right: 20px;
+			margin-right: 50px;
 		}
 
 
@@ -527,6 +513,7 @@ overflow: hidden; //   -------    THIS KEEPS TEXT FROM OVERFLOWING PAST BORDER  
 
 	 .main-container {
 		display: flex;
+
 		
 	   }
 	   .box1, .box2{  // BLUE BOX ------------- BLUE BOX ------------- BLUE BOX ------------- BLUE BOX -------------

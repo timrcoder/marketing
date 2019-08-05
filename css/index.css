@@ -11,7 +11,6 @@ body {
   width: 100%;
   border: 2px solid yellow;
   display: flex;
-  justify-content: space-evenly;
 }
 /* LOGO-----------LOGO-------------LOGO-----------LOGO-----------LOGO----------- */
 .logo {
@@ -52,16 +51,16 @@ a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 50px;
   display: block;
 }
 .main {
-  height: 560px;
-  /*   https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg */
+  height: 600px;
   background-image: url("https://www.viennawurstelstand.com/wp-content/uploads/2017/03/viennawurstelstand_boardgamebars_cafebenno3.jpg");
   background-size: cover;
   text-align: center;
   position: relative;
+  /*   https://cdn8.dissolve.com/p/D1089_85_162/D1089_85_162_1200.jpg */
 }
 .wrapper {
   position: absolute;
@@ -82,10 +81,6 @@ a {
   display: inline;
 }
 /*----------------------------------------Column-------------------------------------------Column------*/
-.col {
-  width: 75%;
-  margin: 2em auto;
-}
 .btn-default {
   padding: 16px 20px;
   margin: auto;
@@ -129,17 +124,13 @@ a:hover {
   vertical-align: top;
   margin-top: 4em;
 }
-.col p {
-  margin-bottom: 1.8em;
-  border-radius: 6px;
-}
 .section-border-container {
   border: 3px dotted royalblue;
   text-align: center;
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  height: 320px;
+  height: 280px;
 }
 section .container {
   display: flex;
@@ -164,7 +155,7 @@ footer p {
   width: 100vw;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background: url("https://pics.freeartbackgrounds.com/midle/Blue_Orange_Sky_Background-351.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -254,7 +245,7 @@ footer p {
   margin: 12px;
 }
 .box1 {
-  width: 40vw;
+  width: 45vw;
   height: 50vh;
   border: 2px solid blue;
   margin: 1%;
@@ -322,8 +313,9 @@ footer p {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    align-content: center;
     border: 2px solid black;
-    width: 100vw;
+    width: 94vw;
   }
   .menu-box {
     display: flex;
@@ -343,14 +335,14 @@ footer p {
     justify-content: space-around;
     align-content: center;
     border: 3px solid lawngreen;
-    margin-left: 20px;
+    margin-left: 40px;
     display: flex;
   }
   .btn-default {
     width: 80px;
     font-size: 12px;
     height: 20px;
-    margin-right: 20px;
+    margin-right: 50px;
   }
   .box1,
   .box2 {
