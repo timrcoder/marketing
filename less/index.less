@@ -22,21 +22,21 @@ html,body{
 .main-header{
 	background-color: @mainColor;
 	text-align: center;
-	height: 130px;
+	height: 110px;
 	width: 100%;
-	border: 2px solid red; // UPPER RED BOX W/ BLUE BACKGROUND
+	border: 2px solid yellow; // UPPER RED BOX W/ BLUE BACKGROUND
 	display: flex;
 	justify-content: space-evenly;
 	// padding-bottom: 13px;
 }
 
-.container {
-	border: 5px dotted salmon;
-	width: 100%;
-	height: auto;
-	margin-right: o0;
-	margin-top: 20px;
-}
+// .container {                         //  This affects the 1st page INTERESTS / EVENTS / GROUPS  area --------------------
+// 	border: 5px dotted darkgray;
+// 	width: 100%;
+// 	height: auto;
+// 	margin-right: 0;
+// 	// margin-top: 20px;
+// }
 /* LOGO-----------LOGO-------------LOGO-----------LOGO-----------LOGO----------- */
 
 .logo {
@@ -74,12 +74,12 @@ p {
 // ---------------------------------------------------------------------------------
 
 .main-nav{
-	margin:0; /*Default margin: 1em , so needs to set 0 to remove margin. */
+	// margin:0; /*Default margin: 1em , so needs to set 0 to remove margin. */
 	border: 2px solid cyan;
 	display: flex;
 	align-items: center;
 	// margin-right: 2%;
-	margin: 0em;
+	// margin: 0em;
 }
 
 li{
@@ -150,7 +150,7 @@ a{
 .btn-default{
 	padding: 16px 20px;
 	margin: auto;
-	border: 1px solid grey;
+	border: 4px solid yellow;
 	color: lightblue;
 	font-size: 1em;
 	background: @mainColor;
@@ -208,7 +208,7 @@ a:hover{
 	}
 
  .section-border-container {  //----------------CONTAINER FOR LOWER 3 CATEGORIES AND THEIR BUTTONS -----------
-	border: 3px dotted goldenrod;
+	border: 3px dotted royalblue;
 	text-align: center;
 	width: 100vw;
 	display: flex;
@@ -259,7 +259,8 @@ a:hover{
 		// margin-right: 4%;
 		height: auto;
 		display: flex;
-		// justify-content: space-around;
+		justify-content: space-around;
+		flex-wrap: wrap;
 		
 			background: url("https://pics.freeartbackgrounds.com/midle/Blue_Orange_Sky_Background-351.jpg") no-repeat center center fixed; 
 			-webkit-background-size: cover;
@@ -270,16 +271,6 @@ a:hover{
 	}
 // ------------- FLIP CARD ------------- FLIP CARD ------------- FLIP CARD ------------- FLIP CARD 
 
-li {
-}
-.text {
-// margin-bottom: 60px;
-
-}
-
-.table{
-
-}
 
 	.flip-card {
 		background-color: transparent;
@@ -340,8 +331,7 @@ li {
   width: 200px;
   height: 200px;
   display: flex;
-  padding: 4px;
-  overflow: hidden; //   -------    THIS KEEPS TEXT FROM OVERFLOWING PAST BORDER  ----------------------------------------
+overflow: hidden; //   -------    THIS KEEPS TEXT FROM OVERFLOWING PAST BORDER  ----------------------------------------
 //   flex-direction: column;
 
     
@@ -356,44 +346,37 @@ li {
   justify-content: center;
   font-weight: bold;
   color: white;
-  padding-top: 80px;
+  margin: 12px;
   
 }
 
 .container {
- margin: 20px 0 20px 0px;
+//  margin: 20px 0 20px 0px;
 }
 
-.box4 {
-  padding: 3px;
-  margin: 20px;
-  background: lightsalmon;
-  display: flex;
-  justify-content: center
-}
+// .box4 {
+//   padding: 3px;
+//   margin: 20px;
+//   background: lightsalmon;
+//   display: flex;
+//   justify-content: center
+// }
 // ===============================================================================================
 // ===============================================================================================
 // ===============================================================================================
-
-
-
-
-
-
 
 	
-	// -------------------------- SPORTS / MUSIC --------------------- SPORTS / MUSIC --------------------- SPORTS / MUSIC 
+
 .box1 {
-	width: 45vw;
-	height: 80vh;
-	border: 2px solid blue;
+	width: 40vw;
+	height: 50vh;
+	border: 2px solid blue;   // BLUE BOXES CONTAINER 2 PHOTOS EACH--------BLUE BOXES CONTAINER 2 PHOTOS EACH
 	margin: 1%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 1%;
 	// flex-direction: column;
-
 }
 .text-and-image1 {
 	// border: 2px solid darkgreen;
@@ -407,27 +390,26 @@ li {
 	margin: 1%;
 	color: white;
 }
-.sports, .music{
-	background: red;
-	width: 200px;
-	height: 200px;
-	border: 2px dashed yellow;
-	margin: 1%;
+// .sports, .music{
+// 	background: red;
+// 	width: 200px;
+// 	height: 200px;
+// 	border: 2px dashed yellow;
+// 	margin: 1%;
 
-}
+// }
 
 // ---------------------- CONVERSATION / UPCOMING EVENTS   ---------------------- CONVERSATION / UPCOMING EVENTS
 .box2 {
-	width: 45vw;
-	height: 80vh;
+	width: 60vw;
+	height: 50vh;
 	border: 2px solid blue;
 	margin: 1%;
 	display: flex;
-	margin: 1%;
 	justify-content: space-around;
 	align-items: center;
-	flex-direction: column;
-	
+	padding: 1%;
+	// flex-direction: column;
 }
 
 .conversation, .upcoming-events{
@@ -448,12 +430,14 @@ li {
 		height: 50%vh;
 		flex-direction: column;
 		align-items: center;
+		margin-top: 6px;
 	}
-	.box1, .box2{
+	.box1, .box2{  // BLUE BOX ------------- BLUE BOX ------------- BLUE BOX ------------- BLUE BOX -------------
 		display: flex;
 		flex-direction: column;
-		width: 80vw;
-		height: 65%;
+		justify-content: space-between;
+		width: 95vw;
+		height: 85vh;
 	}
 	
 	.sports, .music {
@@ -461,11 +445,16 @@ li {
 		width: 45vw;
 		height: 45%vh;
 	}
+	#logo-holder {
+		background: pink;
+		margin: 10px;
+		padding: 0px;
+	}
   }
 
-// ------------------MEDIA 800------------------MEDIA 800----------------MEDIA 800
+// ------------------MEDIA 770------------------MEDIA 770----------------MEDIA 770---------------MEDIA 770
 
-@media (max-width: 800px) {
+@media (max-width: 770px) {
 	 .main-nav{
 	// margin: 1em 3em;
 	margin: 0 auto;
@@ -511,10 +500,40 @@ li {
 			margin-right: 20px;
 		}
 
+
+		.box1, .box2{  // BLUE BOX ------------- BLUE BOX ------------- BLUE BOX ------------- BLUE BOX -------------
+			display: flex;
+			// flex-direction: column;
+			justify-content: space-between;
+			width: 80vw;
+			height: 85%;
+		}
+
+
 		h2 {                   //  -----------  CHANGES FONT SIZE ON LOWER CATEGORY HEADINGS --------
 			font-size: 16px;
 			text-align: center;
 		}
+		.main-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+}
+// --------- MEDIA 1000  --------- MEDIA 1000  --------- MEDIA 1000  --------- MEDIA 1000  --------- MEDIA 1000  ------
+	 
+	 
+	 @media (max-width: 1000px){ 
 
-
- 	}
+	 .main-container {
+		display: flex;
+		
+	   }
+	   .box1, .box2{  // BLUE BOX ------------- BLUE BOX ------------- BLUE BOX ------------- BLUE BOX -------------
+		display: flex;
+		justify-content: space-around;
+		width: 95vw;
+		// height: 50vh;
+		// margin: auto;
+	}
+	 }
