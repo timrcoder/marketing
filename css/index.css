@@ -12,7 +12,7 @@ body {
   border: 2px solid yellow;
   display: flex;
 }
-/* LOGO-----------LOGO-------------LOGO-----------LOGO-----------LOGO----------- */
+/* LOGO-----------LOGO-------------LOGO-----------LOGO-----  NOTE   ------LOGO----------- */
 .logo {
   font-size: 40px;
   color: white;
@@ -80,7 +80,7 @@ a {
   background: steelblue;
   display: inline;
 }
-/*----------------------------------------Column-------------------------------------------Column------*/
+/*----------------------------------------Column-------------  NOTE   -------------Column------*/
 .btn-default {
   padding: 16px 20px;
   margin: auto;
@@ -95,7 +95,7 @@ a {
 #copyright {
   color: white;
 }
-/*-----------------footer----------------------------footer------------------------footer---------------*/
+/*-----------------footer----------------------------footer------  NOTE  ------------------footer---------------*/
 footer {
   height: 85px;
   background-color: steelblue;
@@ -105,7 +105,7 @@ footer p {
   padding: 1.5em 5em;
   font-size: 0.8em;
 }
-/*---------------------------------------Pseudo Classes-------------------Pseudo Classes-------------------*/
+/*---------------------------------------Pseudo Classes------ NOTE   ---------Pseudo Classes-------------------*/
 a:hover {
   color: white;
   opacity: 0.7;
@@ -144,7 +144,7 @@ section .container {
 .col {
   width: 220px;
 }
-/*-----footer-----*/
+/*-----footer-------------Footer----------  NOTE   ---*/
 footer p {
   padding: 2em 6em;
   font-size: 20px;
@@ -189,6 +189,7 @@ footer p {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 .flip-card-front {
   background-color: #bbb;
@@ -226,15 +227,17 @@ footer p {
 }
 #logo-holder {
   border: 2px solid black;
-  background: fuchsia;
+  background: beige;
   width: 200px;
   height: 200px;
+  border-radius: 10px;
   display: flex;
   overflow: hidden;
 }
 .image {
   width: 200px;
   height: 200px;
+  border-radius: 10px;
 }
 .text {
   display: flex;
@@ -243,6 +246,7 @@ footer p {
   font-weight: bold;
   color: white;
   margin: 12px;
+  border-radius: 10px;
 }
 .box1 {
   width: 45vw;
